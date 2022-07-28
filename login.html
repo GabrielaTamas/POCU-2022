@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Login Section</h1>
-        <form action="./login.html" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required minlength="5">
-            <br>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <br>
-            <a href="./contact.html"><button>Log in</button></a>
-            <!-- <input type="submit" value="Log in"> -->
-            <br>
+        <div class="container">
+            <header>
+                <nav class="navigation-links">
+                    <a class="link" href="index.html">Home</a>
+                    <a class="link" href="contact.html">Contact</a>
+                    <a class="link" href="cv.html">CV</a>
+                    <a class="link" href="register.html">Register</a>
+                </nav>
+            </header>
+            <div class="login-section">
+                <form action="./login.html" method="post">
+                    <input type="text" id="username" name="username" class="textBox" placeholder="Username" required>
+                    <br>
+                    <br>
+                    <input type="password" id="password" name="password" class="textBox" placeholder="Password" required>
+                    <br>
+                    <br>
+                    <a href="./contact.html">Log in</a>
+                    <!-- <input type="submit" value="Log in"> -->
+                    <br>
+                    <input type="submit" value="buton2">
+                    <br>
+                    <a href="./contact.html"><button type="button">buton1</button></a> <!-- in interiorul unui form, <button> se comporta ca submit-->
+                </form>
+            </div>
             <h3>New here? <a href="register.html">Register</a>.</h3>
-            <h3><a href="./contact.html">Contact page</a></h3>
-        </form>
+            <a href="./contact.html"><button>buton1</button></a>  <!-- in ext unui form, <button> se comporta ca buton-->
+        </div>
     </body>
 </html>

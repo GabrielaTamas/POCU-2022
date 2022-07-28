@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact</title>
-        <link rel="stylesheet" href="">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Contact Page</h1>
-        <form action="./contact.html" method="post">
-            <label for="firstname">First Name:</label>
-            <input type="text" id="firstname" name="firstname" value="Ana-Gabriela" disabled>
-            <br>
-            <br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" value="Tămaș" disabled>
-            <br>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="gabrielatamas27@gmail.com" disabled>
-            <br>
-            <br>
-            <label for="telefon">Telephone:</label>
-            <input type="tel" id="telefon" name="telefon" value="0749314548" disabled>
-            <br>
-            <br>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" value="Main Street, number 38" disabled>
-            <h3>Go back to the <a href="login.html">main page</a>.</h3>
-        </form>
+        <div class="container">
+            <header>
+                <nav class="navigation-links">
+                    <a class="link" href="index.html">Home</a>
+                    <a class="link" href="cv.html">CV</a>
+                    <a class="link" href="login.html">Login</a>
+                    <a class="link" href="register.html">Register</a>
+                </nav>
+            </header>
+            <h1 class="question">Have some questions?</h1>
+            <form action="./contact.html" method="post">
+                <section class="data-section">
+                    <input type="text" id="firstname" name="firstname" class="textBox" placeholder="First Name" required>
+                    <br>
+                    <br>
+                    <input type="text" id="lastname" name="lastname" class="textBox" placeholder="Last Name" required>
+                    <br>
+                    <br>
+                    <input type="email" id="email" name="email" class="textBox" placeholder="What's your email?" required>
+                    <br>
+                    <br>
+                    <textarea name="questions" id="questions" cols="20" rows="10" class="textBox textArea" placeholder="Your questions.." required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" class="btn" value="Send message"></input>
+                    <!-- <img src="postcard.png" class="pic" alt="letter-icon"> -->
+                </section>
+            </form>
+            <footer>
+                <section class="footer1">
+                    <h2>Stay connected</h2>
+                    <a class="fa fa-facebook" href="https://www.facebook.com/gabriela.tamas.54"></a>
+                </section>
+                <section class="footer2">
+                    <p>Tămaș Ana-Gabriela 2022. &copy; All rights reserved.</p>
+                </section>
+            </footer>
+        </div>
     </body>
 </html>
