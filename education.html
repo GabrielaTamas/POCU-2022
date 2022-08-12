@@ -2,24 +2,63 @@
 <html>
     <head>
         <title>Education</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_education.css">
     </head>
     <body>
-        <h1>Education</h1>
-        <div style="background-image: url(2.jpg);">
-            <h2>University</h2>
-            <ul>
-                <li>Name: Technical University of Cluj-Napoca, Faculty of Automation and Computer Science</li>
-                <li>Status: Bachelor's Degree (third year)</li>
-                <li>Period: 2019 - present</li>
-            </ul>
-            <h2>Highschool</h2>
-            <ul>
-                <li>Name: Technological Highschool Iernut</li>
-                <li>Specialization: Natural Sciences</li>
-                <li>Period: 2015 - 2019</li>
-            </ul>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="left-corner">
+                <a class="home-icon1" href="./index.html">
+                    <ion-icon name="home"></ion-icon>
+                </a>
+                <a class="home-icon2" href="./cv.html">
+                    <ion-icon name="arrow-undo"></ion-icon>
+                </a>
+            </div>
+            <div class="contact-box">
+                <div class="left">
+                    <div class="university">
+                        <h2>University</h2>
+                        <div class="univ">
+                            <ion-icon name="school"></ion-icon>
+                            <p>Technical University of Cluj-Napoca</p>
+                        </div>
+                        <div class="status">
+                            <ion-icon name="ribbon"></ion-icon>
+                            <p>Bachelor's Degree (third year)</p>
+                        </div>
+                        <div class="period">
+                            <ion-icon name="calendar"></ion-icon>
+                            <p>2019 - present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="highschool">
+                        <h2>Highschool</h2>
+                        <div class="univ">
+                            <ion-icon name="school"></ion-icon>
+                            <p>Technological Highschool Iernut</p>
+                        </div>
+                        <div class="status">
+                            <ion-icon name="ribbon"></ion-icon>
+                            <p>Natural Sciences</p>
+                        </div>
+                        <div class="period">
+                            <ion-icon name="calendar"></ion-icon>
+                            <p>2015 - 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3>If you want to go back to the main page, <a class="link" href="index.html">click here</a>.</h3>
+        <footer>
+            <section class="rights">
+                <p>Tămaș Ana-Gabriela 2022. &copy; No rights reserved.</p>
+            </section>
+        </footer>
+        <!-- https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

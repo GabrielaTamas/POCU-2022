@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    /* https://coolors.co/ */
+    --color-brown: #1c130d;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-box {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid;
+    border-color: #194328;
+    border-radius: 3px;
+    box-shadow: 16px 11px 4px 2px #659c7a;
+}
+
+.left {
+    width: 216px;
+    height: 295px;
+    background: url(./register.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.right {
+    width: 216px;
+    height: 295px;
+    padding-left: 23px;
+    z-index: 1;
+    background-color: white;
+}
+
+.rights p {
+    margin: 0;
+    background-color: #0b1e12;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.left-corner {
+    position: relative;
+    z-index: 1;
+}
+
+.home-icon {
+    position: absolute;
+    right: 89px;
+    top: -160px;
+    color: #173f25;
+    font-size: 18px;
+}
+
+.textBox {
+    margin-top: 15px;
+    margin-left: -23px;
+    border: 2px solid #194328f2;
+    border-radius: 15px;
+    width: 155px;
+    height: 22px;
+    text-indent: 6px;
+}
+
+.gen {
+    color: #0d301c;
+    font-size: 14px;
+}
+
+.textBox1 {
+    margin-top: 15px;
+    margin-left: -23px;
+    border: 2px solid #194328f2;
+    border-radius: 15px;
+    width: 155px;
+    height: 22px;
+    text-indent: 6px;
+    margin-bottom: 12px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+}
+
+.genders, p, a {
+    font-size: 13px;
+    color: #0d301c;
+    text-decoration: none;
+}
+
+.div {
+    margin-left: -24px;
+    margin-bottom: 10px;
+}
+
+.dateArea {
+    width: 94px;
+    height: 18px;
+}
+
+p {
+    margin-left: -20px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    width: 85px;
+    height: 26px;
+    border: 2px solid #163a23;
+    border-radius: 14px;
+    background-color: #163a23;
+    color: white;
+    margin-left: -24px;
+}
+
+.btn:hover {
+    border: 2px solid #163a23;
+    color: #163a23;
+    background-color: white;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #163a23;
+}
+
+.link-a:hover {
+    font-size: 16px;
+    text-decoration: underline;
+}

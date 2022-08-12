@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    /* https://coolors.co/ */
+    --color-brown: #1c130d;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 100px;
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(cv.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.cv-box {
+    height: 48vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    justify-items: center;
+    margin-top: -120px;
+    margin-left: 47px;
+}
+
+.left {
+    width: 50vh;
+    height: 100%;
+    background: url(4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    border: 2px solid var(--color-brown);
+    border-radius: 85px;
+    margin-right: 33px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(43, 32, 18, 0.6);
+}
+
+.icon {
+    color: white;
+    font-size: 190px;
+    margin-top: 80px;
+}
+
+.right {
+    z-index: 1;
+}
+
+h2 {
+    position: relative;
+    font-family: Playfair Display, serif;
+    font-size: 19px;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.rights p {
+    margin: 0;
+    background-color: var(--color-brown);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.left-corner {
+    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    right: 35px;
+    top: -155px;
+    color: white;
+}
+
+.description {
+    text-align: left;
+    width: 300px;
+}
+
+.personal-data {
+    position: absolute;
+    top: 190px;
+    left: 110px;
+}
+
+.localitate, .email, .phone {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+p {
+    color: white;
+    font-family: auto;
+}
+
+.icons {
+    color: white;
+}
+
+.iconss {
+    color: white;
+}
+
+.iconss:hover {
+    color: var(--color-brown);
+}
+
+.more {
+    position: absolute;
+    z-index: 1;
+    bottom: 71px;
+    right: 159px; 
+}
+
+.btn {
+    width: 85px;
+    height: 25px;
+    border: 2px solid var(--color-brown);
+    border-radius: 20px;
+    background-color: var(--color-brown);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+#more {
+    display: none;
+}
+
+.education-experience {
+    position: absolute;
+}
+
+.education, .experience {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.education {
+    margin-top: 9px;
+}

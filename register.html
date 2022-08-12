@@ -2,40 +2,51 @@
 <html>
     <head>
         <title>Register</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./style_register.css">
     </head>
     <body>
-        <h1>Register Section</h1>
-        <form action="./register.html" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <br>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required minlength="5">
-            <br>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <br>
-            <label>Gender:</label>
-            <input type="radio" id="female" name="radioButton" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="male" name="radioButton" value="male">
-            <label for="male">Male</label>
-            <br>
-            <br>
-            <label for="date">Date of Birth:</label>
-            <input type="date" id="date" name="date" required>
-            <br>
-            <br>
-            <input type="checkbox" id="mesage" name="mesage" required>
-            <label for="mesage">I am aware of the confidentiality agreement.</label>
-            <br>
-            <br>
-            <input type="submit" value="Register">
-            <h3>Already registered? <a href="login.html">Log in</a>.</h3>
-        </form>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="left-corner">
+                <a class="home-icon" href="./index.html">
+                    <ion-icon name="home"></ion-icon>
+                </a>
+            </div>
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <form action="./register.html" method="post">
+                        <input class="textBox" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="textBox" type="text" id="username" name="username" placeholder="Username" required minlength="5">
+                        <input class="textBox1" type="password" id="password" name="password" placeholder="Password" required>
+                        <div class="div">
+                            <label class="gen">Gender:</label>
+                            <input class="circle" type="radio" id="female" name="radioButton" value="female">
+                            <label class="genders" for="female">Female</label>
+                            <input class="circle" type="radio" id="male" name="radioButton" value="male">
+                            <label class="genders" for="male">Male</label>
+                        </div>
+                        <div class="div">
+                            <label class="gen" for="date">Date of Birth:</label>
+                            <input class="dateArea" type="date" id="date" name="date" required>
+                        </div>
+                        <div class="div">
+                            <input class="circle" type="checkbox" id="mesage" name="mesage" required>
+                            <label class="genders" for="mesage">I am aware of the confidentiality agreement.</label>
+                        </div>
+                        <p>Already registered? <a class="link-a" href="login.html">Log in</a>.</p>
+                        <input class="btn" type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <section class="rights">
+                <p>Tămaș Ana-Gabriela 2022. &copy; No rights reserved.</p>
+            </section>
+        </footer>
+        <!-- https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

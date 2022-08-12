@@ -2,36 +2,41 @@
 <html>
     <head>
         <title>Login Page</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_login.css">
     </head>
     <body>
         <div class="container">
-            <header>
-                <nav class="navigation-links">
-                    <a class="link" href="index.html">Home</a>
-                    <a class="link" href="contact.html">Contact</a>
-                    <a class="link" href="cv.html">CV</a>
-                    <a class="link" href="register.html">Register</a>
-                </nav>
-            </header>
-            <div class="login-section">
-                <form action="./login.html" method="post">
-                    <input type="text" id="username" name="username" class="textBox" placeholder="Username" required>
-                    <br>
-                    <br>
-                    <input type="password" id="password" name="password" class="textBox" placeholder="Password" required>
-                    <br>
-                    <br>
-                    <a href="./contact.html">Log in</a>
-                    <!-- <input type="submit" value="Log in"> -->
-                    <br>
-                    <input type="submit" value="buton2">
-                    <br>
-                    <a href="./contact.html"><button type="button">buton1</button></a> <!-- in interiorul unui form, <button> se comporta ca submit-->
+            <div class="overlay"></div>
+            <div class="left-corner">
+                <a class="home-icon" href="./index.html">
+                    <ion-icon name="home"></ion-icon>
+                </a>
+            </div>
+            <div class="login-box">
+                <div class="avatar">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </div>
+                <form class="form" action="">
+                    <div class="first-text">
+                        <ion-icon name="person"></ion-icon>
+                        <input class="text-box" type="text" placeholder="Username" required>
+                    </div>
+                    <div class="second-text">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        <input class="text-box2" type="password" placeholder="Password" required>
+                    </div>
+                    <a href="./register.html" class="question">Don't have an account?</a>
+                    <input type="submit" class="btn" value="Login">
                 </form>
             </div>
-            <h3>New here? <a href="register.html">Register</a>.</h3>
-            <a href="./contact.html"><button>buton1</button></a>  <!-- in ext unui form, <button> se comporta ca buton-->
         </div>
+        <footer>
+            <section class="rights">
+                <p>Tămaș Ana-Gabriela 2022. &copy; No rights reserved.</p>
+            </section>
+        </footer>
+        <!-- https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

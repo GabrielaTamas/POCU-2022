@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    /* https://coolors.co/ */
+    --color-blue-navy: rgb(40 40 64);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(219, 197, 197, 0.1);
+}
+
+.container:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(login.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.login-box {
+    width: 250px;
+    height: 260px;
+    background-color: rgb(40 40 64 / 70%);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.avatar {
+    position: absolute;
+    left: 93px;
+    top: 13px;
+    font-size: 65px;
+    color: rgb(255 255 255);
+}
+
+.text-box {
+    margin-bottom: 25px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    width: 152px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: 0;
+}
+
+.btn {
+    width: 90px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 53px;
+    margin-top: 12px;
+    color: var(--color-blue-navy);
+    font-family: sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(9, 7, 32);
+    border-color: rgb(9, 7, 32);
+    color: white;
+    cursor: pointer;
+}
+
+.first-text {
+    margin-top: 60px;
+}
+
+.question {
+    text-decoration: none;
+    color: white;
+}
+
+.text-box2 {
+    margin-bottom: 12px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,0);
+    border-radius: 10px;
+    width: 152px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    outline: 0;
+}
+
+.rights p {
+    margin: 0;
+    background-color: var(--color-blue-navy);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.left-corner {
+    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 18px;
+    color: var(--color-blue-navy);
+}
+
+.question:hover {
+    color: rgb(9, 7, 32);
+}
+
+.text-box:focus {
+    border: 2px solid rgb(9, 7, 32);
+}
+
+.text-box2:focus {
+    border: 2px solid rgb(9, 7, 32);
+}

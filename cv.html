@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Curriculum Vitae</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="style_cv.css">
+        <script src="script_cv.js" defer></script>
     </head>
     <body>
-        <h1>My Curriculum Vitae</h1>
-        <h2>Tămaș Ana-Gabriela</h2>
-        <picture>
-            <source media="(max-width: 900px)" srcset="1.jpg">
-            <img src="4.jpg" alt="">
-        </picture>
-        <p>I am student at the Technical University of Cluj-Napoca, Faculty of Automation and Computer Science. I am a cheerful and sociable person who likes walks in nature, animals, especially dogs, music and sports. I like to meet new people, make friends, socialize and have fun with them.</p>
-        <h3>Personal Data</h3>
-        <ul>
-            <li>Email: gabrielatamas27@gmail.com</li>
-            <li>Mobile: 0749314548</li>
-        </ul>
-        <h3>Additional Information</h3>
-        <ol>
-            <li>
-                <a class="linkss" href="education.html" target="_blank">Education</a>
-            </li>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="left-corner">
+                <a class="home-icon" href="./index.html">
+                    <ion-icon name="home"></ion-icon>
+                </a>
+            </div>
+            <div class="cv-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Tămaș Ana-Gabriela</h2>
+                    <p class="description">I am a cheerful and sociable person who likes walks in nature, animals, especially dogs, music and sports. I like to meet new people, make friends, socialize and have fun with them.</p>
+                </div>
+            </div>
             <br>
-            <li>
-                <a class="linkss" href="experience.html" target="_blank">Experience</a>
-            </li>
-        </ol>
+            <div class="personal-data">
+                <h2>Personal Data</h2>
+                <div class="localitate">
+                    <ion-icon class="icons" name="home"></ion-icon>
+                    <p>Mureș, Iernut</p>
+                </div>
+                <div class="email">
+                    <ion-icon class="icons" name="mail"></ion-icon>
+                    <p>gabrielatamas27@gmail.com</p>
+                </div>
+                <div class="phone">
+                    <ion-icon class="icons" name="call"></ion-icon>
+                    <p>0749431348</p>
+                </div>
+            </div>
+            <div class="more">
+                <span id="dots"></span>
+                <button onclick="readMore()" id="myBtn" class="btn">Show More</button>
+                <span id="more">
+                    <div class="education-experience">
+                        <div class="education">
+                            <a href="./education.html">
+                                <ion-icon class="iconss" name="school"></ion-icon>
+                            </a>
+                            <p>Education</p>
+                        </div>
+                        <div class="experience">
+                            <a href="./experience.html">
+                                <ion-icon class="iconss" name="briefcase"></ion-icon>
+                            </a>
+                            <p>Experience</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
         <footer>
-            <video  controls muted>
-                <source src="Earth.mp4" type="video/mp4">
-            </video>
+            <section class="rights">
+                <p>Tămaș Ana-Gabriela 2022. &copy; No rights reserved.</p>
+            </section>
         </footer>
+        <!-- https://ionic.io/ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
